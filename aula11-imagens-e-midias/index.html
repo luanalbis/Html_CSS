@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"
+    <title>Imagem dinâmica</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir essa imagem em varios duspositivos diferentes</p>
+    
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível"></img>
+    </picture>
+        <p><strong>Utilizei o SOURCE para definir o tamanho máximo de tela que a imagem abaixo vai aparecer, e do lado indiquei a imagem a qual vai ser trocada, caso a tela seja menor que 1050px coloque o formato da imagem ao lado de image/</strong> </p>
+        
+    <h1>Áudio ! </h1>
+    <p>Vamos tocar um áudio</p>
+    <audio src="midias/ex021.mp3" controls autoplay</audio>
+        <!-- MP3 WAV OGG -->
+    <p>Papa reproduzir o áudio basta usar a tag AUDIO e usar o src="" para o arquivo, use o CONTROLS AUTOPLAY para iniciar o áudio!</p>
+    
+    <audio preload="metadata" autoplay controls>
+        <source src="midias/ex021.mp3" type="audio/mpeg">
+        <source src="midias/ex021.mp3" type="audio/ogg">
+        <source src="midias/ex021.mp3" type="audio/wav">
+        <p>infelizmente seu navegador não é compatível com o áudio</p>
+    </audio>
+    <h1></h1>
+        
+    
+</body>
+</html>

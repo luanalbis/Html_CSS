@@ -1,0 +1,33 @@
+@charset "UTF-8";
+*{
+   height: ;
+   font-family: ;
+}
+
+body {
+   background-color: #233B2B;
+}
+
+main {
+   background-color:#B2C6B8;
+   width: 600px;
+   margin: auto;
+   padding: 10px;
+   border-radius: 10px;
+   box-shadow: 10px 10px 10px black;
+   
+}
+
+
+p{
+   text-align:justify;
+}
+
+h1{
+   color: #233B2B;
+   text-shadow: 2px 2px 2px #000000;
+}
+
+h2{
+   color: #518763;
+}
