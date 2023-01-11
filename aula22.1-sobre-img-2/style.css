@@ -2,7 +2,9 @@
 
 body{
     background-image: url(../aula22-imagens-sobre-imagens/imagens/imagens-cap19/pattern001.png);
-    background-repeat: repeat;
+    background-repeat:no-repeat ;
+    height: 99%vh;
+    background-position: left top;
 }
 
 .q{
