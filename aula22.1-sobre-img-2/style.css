@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body{
+    background-image: url(../aula22-imagens-sobre-imagens/imagens/imagens-cap19/pattern001.png);
+    background-repeat: repeat;
+}
+
+.q{
+    height: 200px;
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 5px;
+    background-image: url(../aula22-imagens-sobre-imagens/imagens/imagens-cap19/wallpaper003.jpg);
+}
+
+#q1{
+    background-position: left top;
+}
+
+#q2{
+    background-position: left center;
+}
+
+#q3{
+    background-position: right bottom;
+}
+
+#q4{
+    background-position: center center;
+}
