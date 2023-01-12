@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+table{
+    margin: auto;
+    width: 50vw;
+    border-collapse: collapse;
+    font-family: sans-serif;
+}
+
+caption {
+    padding: 20px 0;
+    background-color: black;
+    text-align: center;
+    font-size: 4vw;
+    color: red;
+    font-weight: bolder;
+}
+
+tr:nth-child(2n){
+    background-color: rgb(228, 228, 228);
+}
+
+td,th {
+    border: solid 1px black;
+    padding: 10px 50px;
+    text-align: center justify;
+    font-size: 2vw;
+}
+
+th{
+    background-color: black;
+    color: white;
+}
+
+.campeao{
+    background-color: red;
+}
+
+.presidente{
+    background-color: green;
+    text-align: center;
+}
