@@ -1,10 +1,16 @@
 @charset "utf-8";
 
 table{
-    margin: auto;
-    width: 50vw;
+    
+    width: 50%;
     border-collapse: collapse;
     font-family: sans-serif;
+    position: relative;
+}
+
+thead > tr > th {
+    position: sticky;
+    top: -1px;
 }
 
 caption {
