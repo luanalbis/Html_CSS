@@ -17,7 +17,14 @@
     </style>
 </head>
 <body>
-    <form autocomplete="off" action="cadastro.py">
+
+    <!-- method="GET (Padrão) mostra os dados da label ma url do navegador e POST (Não mostra os dados do input na url do navegador)" 
+        autocomplete="ON ou OFF" 
+        action="Ação que o submit irá realizar"
+        label = Usado para definir para qual Input seu formulário será vinculado // for='coloque o nome de name ou do id'
+        placeholder = define o nome que você colocará dentro do input-->
+        
+    <form method="POST" autocomplete="off" action="cadastro.py">
         <label for="inome">Nome</label>
         <input type="text" name="nome" id="inome" placeholder="Nome"><br>
 

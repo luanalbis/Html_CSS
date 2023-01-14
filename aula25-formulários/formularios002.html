@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Teste de formularios</h1>
+
+    <!--required-Obriga o usuario a preencher os campos
+
+        min-legth e max length = define o minimo e o maximo de caracteres do input
+
+        size= tamanho da caixa do input
+
+        autocomplete dentro do input= tem mais opções para ajudar o navegador, autocplete do form deve está como 'ON'
+      -->
+
+
+    <form method="post" action="cadastro.py" autocomplete="on">
+        <p>
+            <label for="inome">Nome</label>
+            <input type="nome" name="" id="inome" required minlength="5" maxlength="10" size="10" autocomplete="nickname">
+        </p>
+        <p>
+            <label for="isenha">Senha</label>
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="15" size="10" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+    
+</body>
+</html>
