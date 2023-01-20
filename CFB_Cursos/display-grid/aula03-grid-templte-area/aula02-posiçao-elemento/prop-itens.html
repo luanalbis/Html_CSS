@@ -20,13 +20,13 @@
             display: grid;
             box-sizing: border-box;
             grid-template-columns: auto auto auto auto;
-            grid-template-rows: 100px 90vh 50px;
+            grid-template-rows: 100px 90vh auto;
             grid-template-areas:
             'header header header header'
             'main main main lateral'
             'footer footer footer footer'
             ;
-            gap: 5px;
+            gap: 2px;
             text-align: center;
         }
         .cor {
@@ -39,11 +39,22 @@
     </style>
 </head>
 <body class="conteiner">
+
     <header class="cor" id="header"><h2>Cabeçalho</h2></header>
-    <main class="cor" id="main"><h2>Principal</h2>
-    <p>Primeiro adcionamos um GRID-AREA:'nome da area' nass area que queremos configurar o grid layout</p></main>
-    <section class="cor" id="lateral"><h2>Lateral</h2></section>
-    <footer class="cor" id="footer"><h2>Rodapé</h2>
+
+    <main class="cor" id="main">
+        <h2>Principal</h2>
+    <p>Primeiro adcionamos um GRID-AREA:'nome da area' nass area que queremos configurar o grid layout</p>
+    <p>no container grid, configuramos quantas colunas terá, e através do grid-template-areas podemos configurar o layout</p>
+<p></p>
+    </main>
+
+    <section class="cor" id="lateral">
+        <h2>Lateral</h2>
+    </section>
+
+    <footer class="cor" id="footer">
+        <h2>Rodapé</h2>
     </footer>
 
 
