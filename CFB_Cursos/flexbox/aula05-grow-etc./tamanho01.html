@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+
+        div {
+            display: flex;
+            
+            margin: 0;
+            padding: 0;
+            width: 40vw;
+            height: 300px;
+            border: 1px solid black;
+            align-content: space-around;
+            align-items: flex-start;
+
+        }
+
+        div p {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(207, 128, 24);
+            flex-grow: 1;
+           
+            flex-shrink: 2; /*os itens irão vazar  */
+        }
+
+        #flex1{
+            flex-shrink: 0;
+            order: 0;
+            align-self:flex-start;
+            justify-self: flex-end;
+        }
+
+
+    </style>
+    
+</head>
+<body>
+    <h1>grow, basis ,shrink e order</h1>
+
+    <p>Para um item ser flex (aumentar ou não em relação ao container), ele não pode ter tamanhos definidos, pois o flex irá respeitar a declaração do width</p>
+
+    <p>flex-grow inutiliza o justify-content</p>
+    <ul>
+        <li>flex-grow - padrão 0 - quanto maior o flex-grow, maior o item esticará em relação aos outros,o item crescerá o maximo que conseguir. Os itens ocuparão todo o espaço</li> <br>
+
+        <li>flex-basis - padrão auto - O = indica que todos os itens começarão com o a mesma base, ou seja, mesmo tamanho, se não aplicarmos isso, o item terá o tamanho do seu conteúdo</li> <br>
+
+        <li>flex-shrink - padrão 1 - capacidade do elemento diminuir para caber no container</li><br>
+
+        <li>order - padrão - ordem de posicionamento - se adcionarmos uma order para um item, ele irá para a ultima posição - a ordem será do menor para o maior</li> <br>
+
+        <li>flex - um atalho - flex:flex-grow, flex-shrink, flex-basis </li> <br>
+
+        <li>align-self - aplicar no item flex, para alinhar somente ele isoladamente no eixo secundário</li>
+    </ul>
+
+    <div>
+        <p id="flex1">Luan 1</p>
+        <p>Luan 2</p>
+        <p>Luan 3</p>
+        <p>Luan 4</p>
+        <p>Luan 5</p>
+        <p>Luan 6</p>
+    </div>
+    
+</body>
+</html>

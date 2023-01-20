@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Grid</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        div {
+            max-width: 1000px;
+            margin: auto;
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: 80% auto; /*determina quantas colunas terá, e sua largura*/
+            grid-template-rows: 50vh; /*determina a altura da linha, ordem*/
+            gap: 2px;
+        }
+
+        p {
+            background-color: rgb(120, 120, 231);
+            color: white;
+            border: .5px solid white;
+            text-align: center;
+        }
+
+        p.ponta{
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>coluns e rows</h1>
+
+    <div>
+        <p>luan</p>
+        <p class="ponta">luan</p>
+        
+    </div>
+    <h4>Primeiro Deinimos o elemento pai com display grid</h4> <br>
+    <h4>grid-template-columns - determina quantas colunas terá, e sua largura</h4> <br>
+    <h4>grid-template-rows - determina a altura da linha toda</h4> <br>
+    <h4>Gap - determina o espaço geral entre linhas e colunas, pode colocar 2 valores</h4> <br>
+    <h4>grid-column-gap - determina um espaço soemente para as colunas</h4> <br>
+    <h4>grid-rows-gap - determina um espaço soemente para as linhas</h4> <br>
+</body>
+</html>
