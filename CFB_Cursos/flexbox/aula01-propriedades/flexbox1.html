@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        .flexbox1{
+            display: flex;
+            border: 1px solid black;
+            max-width: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Estudos de flexbox</h1>
+    <ul>
+        <li>Main axis = eixo principal, padrão da esquerda para direita</li>
+        <li>cross axis = eixo cruzado, padrão de cima para baixo</li>
+    </ul>
+
+    <p>1 container deve está configurado com display:flex;</p>
+
+    <p>2 se o container tiver um max-width e os itens dentro dele e a soma da largura dos itens for maior que o max width, os itens vazarão para fora</p>
+
+    <p>3 flex item tera a altura ou a largura maxima do container, depende do flex direction</p>
+
+    <p>4 flex item se ajustará para caber no container, a nao ser se ocorrer o ponto 2 </p>
+
+    <div class="flexbox1">
+        <p>1 Luan Lindo</p>
+        <p>1 Luan Lindo</p>
+        <p>1 Luan Lindo</p>
+        <p>1 Luan Lindo</p>
+        <p>1 Luan Lindo</p>
+    </div>
+   
+    
+</body>
+</html>
