@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Grid</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        ::-webkit-scrollbar{
+            width: 0;
+        }
+
+        body.conteiner {
+            display: grid;
+            box-sizing: border-box;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: 100px 90vh 50px;
+            grid-template-areas:
+            'header header header header'
+            'main main main lateral'
+            'footer footer footer footer'
+            ;
+            gap: 5px;
+            text-align: center;
+        }
+        .cor {
+            background-color: rgb(212, 0, 255);
+        }
+
+        #header{grid-area:header;} #main{grid-area:main;} #lateral{grid-area:lateral;} #footer{grid-area:footer;}
+        
+
+    </style>
+</head>
+<body class="conteiner">
+    <header class="cor" id="header"><h2>Cabeçalho</h2></header>
+    <main class="cor" id="main"><h2>Principal</h2>
+    <p>Primeiro adcionamos um GRID-AREA:'nome da area' nass area que queremos configurar o grid layout</p></main>
+    <section class="cor" id="lateral"><h2>Lateral</h2></section>
+    <footer class="cor" id="footer"><h2>Rodapé</h2>
+    </footer>
+
+
+   
+</body>
+</html>
