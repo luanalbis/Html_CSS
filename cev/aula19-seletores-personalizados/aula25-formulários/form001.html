@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+
+        input {
+           
+        }
+        
+    </style>
+</head>
+<body>
+
+    <!--
+        
+        method="GET (Padrão) mostra os dados da label ma url do navegador e POST (Não mostra os dados do input na url do navegador)" 
+
+        autocomplete="ON ou OFF" 
+
+        action="Ação que o submit irá realizar"
+
+        label = Usado para definir para qual Input seu formulário será vinculado // for='coloque o nome de name ou do id'
+
+        placeholder = define o nome que você colocará dentro do inpu
+        
+        t-->
+
+    <h2>method, autocomplete, action, label, placeholder</h2>
+        
+    <form method="POST" autocomplete="off" action="cadastro.py">
+        <label for="inome">Nome</label>
+        <input type="text" name="nome" id="inome" placeholder="Nome"><br>
+
+        <label for="isobrenome">Sobrenome</label>
+        <input type="text" name="sobrenome" id="isobrenome" placeholder="Sobrenome"> <br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <!--
+        
+        required-Obriga o usuario a preencher os campos
+
+        min-legth e max length = define o minimo e o maximo de caracteres do input
+
+        size= tamanho da caixa do input
+
+        autocomplete dentro do input= tem mais opções para ajudar o navegador, autocplete do form deve está como 'ON'
+
+        
+      -->
+    
+    <h2>required, min e max length, size, autocomplete no input</h2>
+
+      <form method="post" action="cadastro.py" autocomplete="on">
+        <p>
+            <label for="inome">Nome</label>
+            <input type="nome" name="" id="inome" required minlength="5" maxlength="10" size="10" autocomplete="nickname">
+        </p>
+        <p>
+            <label for="isenha">Senha</label>
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="15" size="10" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+
+    <!--
+        
+         max ou min = Numero maximo e minimo permitido
+    
+         step='validador de numeros, por exemplo step='0.1' o seu imput ira aceitar numeros como 1.1 , 1.2, 1.3
+        
+         value='podemos deixar aqui um valor ja predefinido para o input'
+        
+         ATENÇÃO = os inputs não são compaíveis com todos os navegadores
+        
+        -->
+
+
+        <h2>max e min, step=, value= , compatibilidade</h2>
+
+        <form autocomplete="on" method="post" action="cadastro.py">
+            <p>
+                <label for="inome">nome</label>
+                <input type="text" name="nome" id="inome" required maxlength="30" minlength="4" placeholder="nome" autocomplete="name">
+    
+                <label for="imedia"></label>
+                <input type="number" name="media" id="imedia" placeholder="0 a 10" required min="0" max="10" step="0.1">
+            </p>
+            <p>
+                <label for="imes">Periodo</label>
+                <input type="month" name="mes" id="imes" required>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+    
+        </form>
+
+         <!--
+
+         Estudar mais sobre REGEX - exemplo simples no input telefone 
+    
+         fieldset = Agrupa determinado formulário
+        
+         legend = Coloca um nome no topo do agrupamento, como no exemplo abaixo
+        
+         
+        -->
+
+
+    <h2>REGEX, fieldset, legend </h2>
+
+    <form action="cadastro.py">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="iemail">Email</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="itelefone">Telefone</label>
+                <input type="tel" name="telefone" id="itelefone" autocomplete="tel" pattern="^[0-9]{4,5}-[0-9]{4}$" required>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+
+
+        <!-- 
+        
+        Para o usuário não conseguir selecionar duas opções onde deveria selecionar apenas uma no type radio , basta colocar o mesmo NAME para as opções, o ID tem que ser diferente para o LABEL funcionar
+
+        para deixar algumas opções ja predefinidas, basta CHECKED no input
+    
+    -->
+
+
+    <h2>type radio e checkbox, checked, obs radio</h2>
+    <form action="">
+        <fieldset>
+            <legend>Sexo</legend>
+            <label for="imas">Masculino</label>
+            <input type="radio" name="sexo" id="imas" required>
+            <label for="ifem">Feminino</label>
+            <input type="radio" name="sexo" id="ifem">
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="fut" id="ifut"> 
+            <label for="ifut">Futebol</label> <br>
+            <input type="checkbox" name="bas" id="ibas"> <label for="ibas">Basquete</label> <br>
+            <input type="checkbox" name="volt" id="ivol"> <label for="ivol">Vôlei</label> <br>
+            <input type="checkbox" name="nat" id="inat"> <label for="inat">Natação</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+
+    <h2>formulario arquivos</h2>
+
+    <form action="cadastro.py" method="post">
+        <p>
+            <label for="icor">Cor</label>
+            <input type="color" name="cor" id="icor" value="#00ff00">
+        </p>
+        <p>
+            <label for="inivel">Nivel</label>
+            <input type="range" name="nivel" id="inivel" min="20" max="50" value="1" >
+        </p>
+        <p>
+            <label for="ifoto">Foto de perfil</label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+    </form>
+    
+
+    <!-- 
+
+
+        formularios sem input
+
+        select = cria uma area de seleção de itens - coloque as opções dentro da tag option value='nome q vai aparecer ao marcar a opcão'>nome completo
+
+        optgroup = Podemos tambem dividir as opções por temas usando optgroup label='nome da opção' e colocar as opções identadas na tag
+
+        datalist = podemos criar uma lista para o input com essa tag, possibilitando o usuário selecionar item da lista e tambem digitar caso não encontre o item desejado
+
+        ATENÇÃO - deina um id para a datalist e vincule este id a uma list=''
+        no input que deseja, coloque as opções com a tag option identada na tag datalist
+
+        textarea= como o nome ja diz, cria uma area para o usuario digitar algo
+
+     -->
+     
+     <h2>formularios sem input, textarea, select, option, optgroup, datalist</h2>
+
+     <form action="cadastro.py" method="post">
+         <p>
+             <label for="iestado">Estado</label>
+             <select name="estado" id="iestado">
+ 
+                 <optgroup label="Nordeste">
+                     <option value="BA">Bahia</option>
+                     <option value="CE">Ceará</option>
+                     <option value="MA">Maranhão</option>
+                     <option value="RE">Recife</option>
+                 </optgroup>
+ 
+                 <optgroup label="Sudeste">
+                     <option value="SP">São Paulo</option>
+                     <option value="RJ">Rio de Janeiro</option>
+                     <option value="MG">Minas Gerais</option>
+                     <option value="ES">Espirito Santo</option>
+                 </optgroup>
+ 
+                 <optgroup label="Centro-Oeste">
+                     <option value="DF">Distrito Federal</option>
+                     <option value="MT">Mato Grosso</option>
+                     <option value="GO">Goiás</option>
+                 </optgroup>
+             </select>
+         </p>
+ 
+         <p>
+             <label for="itrab">Profissão</label>
+             <input type="text" name="trab" id="itrab" list="listatrab" required>
+             <datalist id="listatrab" >
+                 <option>Administradror</option>
+                 <option value="CONT">Contador</option>
+                 <option value="PROF">Professor</option>
+             </datalist>
+         </p>
+ 
+         <p>
+             <label for="imen"></label>Mensagem</p>
+             <textarea name="men" id="imen" cols="30" rows="10"></textarea>
+ 
+         <p>
+             <input type="submit" value="Enviar">
+             <input type="reset" value="Limpar">
+         </p>
+     </form>
+
+      <!-- 
+
+        output = saida de algo, por exemplo, usamos JavaScript para definir a saida do Output. Clocamos a tag oninput='id do input.innerHTML = Number(num.value) + Number(inum2.value)
+
+        ou seja, o output irá mostrar a soma dos dois numeros 
+
+
+     -->
+
+    <h2>output, pouco de JS</h2>
+
+    <form method="post" action="cadastro.py" autocomplete="on">
+        <p>
+            <label for="inum">Numero</label>
+            <input type="number" name="num" id="inum" min="1" max="50" required oninput="isoma.innerHTML = Number(inum.value) + Number(inum2.value)">
+        </p>
+        <p>
+            <label for="inum2">Numero</label>
+            <input type="number" name="num2" id="inum2" min="1" max="50" required oninput="isoma.innerHTML = Number(inum.value) + Number(inum2.value)">
+        </p>
+        <p>
+            <label for="isoma">Soma</label>
+            <output name="soma" id="isoma"></output>
+        </p>
+
+        <p>
+            <label for="irange">Range</label>
+            <input type="range" value="5" name="range" id="irange" oninput="valordorange.innerHTML = Number(irange.value)">
+            <output id="valordorange">5</output>
+        </p>
+
+        <p>
+            <label for="iano">Ano</label>
+            <input type="number" name="ano" id="iano" min="2023" max="1900" oninput="idade.innerHTML = 2023 - Number(iano.value)">
+        </p>
+
+        <p>
+            <label for="idade">Sua idade é: </label>
+            <output id="idade"></output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+    
+</body>
+</html>

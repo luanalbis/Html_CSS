@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"
+    <title>Trabalhando com LINKS</title>
+</head>
+<body>
+    <h1>LINKS EXTERNOS E INTERNOS </h1>
+    <h2>Link externo com URL e tag A/âncora </h2>
+    <p>Acessando o <a href="https://gustavoguanabara.github.io/"target="_blank" rel="external">repositório do Guanabara</a></p>
+    <p>Também podemos acessar o <a href="https://youtube.com/cursoemvideo"target="_blank" rel="external">canal do YouTube</a> do Professor Guanabara </p>
+    <p>Utilizei a tag A para anexar o link do canal do youtube ao nome <q>canal do youtube do professor</q>, logo após o link,<strong>utilize target="_blank" rel="external"</strong> para abrir em outra aba.Se não fizer isto, irá abrir o link na mesma aba e FECHAR seu site</p>
+    <h2>Link interno</h2>  
+    <p>Está é a pagina principal, a <a href="pagina002.html"target="_self"rel="prev">segunda página </a> está aqui, basta clicar :) </p>
+    <p>Esta é minha <a href="noticias/pagina003.html"target="_self"rel="next">página de notícias</a></p>
+    <p>Usei o <strong>rel="prev"</strong> após o link para indicar que essa é a página anterior</p>
+    <p><strong>Rel="nofollow" utilizado quando não temos confiança do site</strong>, avisamos com esta função, que não confiamos pro google </p>
+    <p><strong>Utilize o target="_self"</strong> para indicar que não vai abrir uma outra aba</p>
+    <p>ficar atento em qual pasta estará o arquivo do site, se tiver uma pagina antes, <strong>use o comando ../texto.html</strong></
+    <h2>Links Para download </h2>
+    <ul>
+        <li>
+            <a href="livro/Talvez você deva con... by Lori Gottlieb (z-lib.org).pdf" download="livro/Talvez você deva con... by Lori Gottlieb (z-lib.org).pdf"type="application/pdf">Baixar livro pdf</a>
+        </li>
+        <li>
+            <a href="livro/Talvez você deva con... by Lori Gottlieb (z-lib.org).zip" download="livro/Talvez você deva con... by Lori Gottlieb (z-lib.org).zip" type="application/zip">Baixat livro Zip</a>
+        </li>
+    </ul>
+    <p>Após o link, utilize o <strong>download="nome do arquivo.formato" e o type="verificar no site" site= <a href="https://www.dofactory.com/html/media-types">HTML MEDIAS</strong> </a></p>
+</body>
+</html>

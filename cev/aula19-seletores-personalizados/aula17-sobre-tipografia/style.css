@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+@font-face  {
+   font-family:'bearded';
+   src: url('../../../fontes/as fontes da dynha/BeardedLady-Combined.otf') format('opentype');
+   font-weight: normal;
+   font-style: normal;
+   
+}
+
+body {
+   font-family:bearded;
+}
+
+p{
+   font-style:italic;
+  }

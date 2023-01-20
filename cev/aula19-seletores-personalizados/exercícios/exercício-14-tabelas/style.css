@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+:root {
+    --fundo--: lightgray;
+}
+
+div {
+    overflow-x: auto;
+}
+
+table {
+    font-family: sans-serif;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: solid 1px black;
+    text-align: center;
+    padding: 5px;
+}
+
+.media  {
+    background-color: var(--fundo--);
+}
+
+.grupo {
+    background-color: yellow;
+}

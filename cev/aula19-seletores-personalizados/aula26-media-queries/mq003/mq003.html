@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+
+    <style>
+        /* CONFIGURAÇÕES GERAIS */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            width: 100vw;
+            height: 100vh;
+            background-color: #233eff;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        h1 {
+            color: white;
+            text-shadow: 2px 2px 0px #1526a7;
+            padding: 10px;
+        }
+
+        /* CONFIGURAÇÕES TELA EM PÉ (portrait)*/
+        @media screen and (orientation:portrait){
+            body {
+            background-image: url(../imagens/cev-portrait.jpg);
+            background-position: center bottom;
+            }
+        }
+
+        /* CONFIGURAÇÕES TELA DEITADA (landscape) */
+        @media screen and (orientation:landscape) {
+            body {
+                background-image: url(../imagens/cev-landscape.jpg);
+                background-position: bottom left;
+            }
+            
+        }
+        
+    </style>
+</head>
+<body>
+
+    <!-- 
+
+        Media features - foi utilizada a função media='screen and (orientation:portrait) para telas em pé e  foi utilizada a função media='screen and (orientation:landscape) para telas deitadas'
+
+        obs - a media features deve esta entre parênteses
+
+        tambem foi utilizada a função media='all' para definir uma configuração para todo tipo de dispositivo
+
+     -->
+
+
+    <h1>Mude a orientação do seu dispositivos</h1>
+
+    
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    
+    <!-- 
+
+        output = saida de algo, por exemplo, usamos JavaScript para definir a saida do Output. Clocamos a tag oninput='id do input.innerHTML = Number(num.value) + Number(inum2.value)
+
+        ou seja, o output irá mostrar a soma dos dois numeros 
+
+
+     -->
+
+    <form method="post" action="cadastro.py" autocomplete="on">
+        <p>
+            <label for="inum">Numero</label>
+            <input type="number" name="num" id="inum" min="1" max="50" required oninput="isoma.innerHTML = Number(inum.value) + Number(inum2.value)">
+        </p>
+        <p>
+            <label for="inum2">Numero</label>
+            <input type="number" name="num2" id="inum2" min="1" max="50" required oninput="isoma.innerHTML = Number(inum.value) + Number(inum2.value)">
+        </p>
+        <p>
+            <label for="isoma">Soma</label>
+            <output name="soma" id="isoma"></output>
+        </p>
+
+        <p>
+            <label for="irange">Range</label>
+            <input type="range" value="5" name="range" id="irange" oninput="valordorange.innerHTML = Number(irange.value)">
+            <output id="valordorange">5</output>
+        </p>
+
+        <p>
+            <label for="iano">Ano</label>
+            <input type="number" name="ano" id="iano" min="2023" max="1900" oninput="idade.innerHTML = 2023 - Number(iano.value)">
+        </p>
+
+        <p>
+            <label for="idade">Sua idade é: </label>
+            <output id="idade"></output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+    
+</body>
+</html>

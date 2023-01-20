@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>exercícios de tabelas</h1>
+
+    <table>
+        <tr>
+            <td colspan="4">A</td>
+            <td rowspan="4">B</td>
+        </tr>
+        <tr>
+            <td rowspan="4">C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr><td>J</td>
+            <td>L</td>
+            <td>M</td>
+        </tr>
+        <tr>
+            <td colspan="4">N</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td colspan="3">8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td rowspan="2">10</td>
+            <td colspan="2">11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+
+        </tr>
+    </table>
+    <table>
+        <caption>Filmes Favoritos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Mulheres</th>
+                <td>Amanda</td>
+                <td>Enrolados</td>
+                <td>Meninas Mal</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Allana</td>
+                <td>Shrek</td>
+                <td>A culpa é das estrelas</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Rejiana</td>
+                <td>Enrolados</td>
+                <td>Meninas Mal</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Homens</th>
+                <td>Luan</td>
+                <td>God of war</td>
+                <td>Resident Evil</td>
+                <td>Piratas dos Caribes</td>
+            </tr>
+            <tr>
+                <td>Cauan</td>
+                <td>Enrolados</td>
+                <td>Meninas Mal</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Paulo</td>
+                <td>Harry Potter</td>
+                <td>Percy Jackson</td>
+                <td>Senhor dos Anéis</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

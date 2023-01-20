@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+
+    <style>
+        iframe {
+            width: 95vw;
+            height: 50vw;
+        }
+    </style>
+    <!-- IFRAME PRECISA TER UM NAME="",ESSE NOME SERÁ UTILIZADO NO TARGET DO LINK -->
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo commodi, tempora illo atque adipisci recusandae quisquam amet optio, accusantium vel impedit ipsam, possimus veniam ex ut eius. Sapiente, alias assumenda.</p>
+
+    <ul>
+        <li><a href="iframe001.html" target="frame">Primeira página</a></li>
+        <li><a href="iframe002.html" target="frame">Segunda página</a></li>
+        <li><a href="../aula22.3-sobre-img/index.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <iframe name="frame" srcdoc="<h1> Olá,clique em algum dos links acima para navegar</h1><p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo commodi, tempora illo atque adipisci recusandae quisquam amet optio, accusantium vel impedit ipsam, possimus veniam ex ut eius. Sapiente, alias assumenda.</p> <img src='imagens/foto-g.png'>" frameborder="1"></iframe>
+    
+</body>
+</html>
